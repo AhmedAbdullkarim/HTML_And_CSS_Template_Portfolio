@@ -1,0 +1,238 @@
+    :root {
+    --dark-cloro: #19283f;
+    --main-color-: #00b7d3;
+    }
+
+
+    .navbar {
+        background-color: var(--dark-cloro);
+        color: var(--main-color-);
+    }
+
+    .navbar-nav .nav-link {
+        color: white; 
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: white;
+    }
+
+    .navbar-toggler {
+        color: white;
+        background-color: white;
+        padding: 0.2em 0.4em;
+    }
+
+    .navbar-brand {
+        color: white;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .navbar-brand:focus,
+    .navbar-brand:hover,
+    .navbar-nav .nav-link.active {
+        color: var(--main-color-);
+    }
+
+    .btn-outline-success {
+        color: var(--main-color-);
+        font-weight: bold;
+    }
+
+    .navbar-toggler:focus {
+    box-shadow: none;
+    }
+
+    .navbar-toggler[aria-expanded="true"] {
+    border: var(--main-color-) 2px solid;
+    }
+
+    .navbar-toggler-icon {
+    width: 1.4em;
+    height: 1.4em;
+    }
+
+    @media (max-width: 991px) {
+    .btn-primary {
+        margin-top: 0.5em;
+    }
+    }
+
+    .landing {
+    background-color: #0e121a;
+    height: calc(100vh - 56px);
+    }
+
+    .features {
+    height: 100%;
+    }
+
+    .box .icon-box {
+    height: 12rem;
+    }
+
+    .features .number {
+    left: 45%;
+    height: 11rem;
+    text-align: center;
+    color: #0e121a19;
+    }
+
+    .features .icon-box {
+    left: 50%;
+    transform: translateX(-56%);
+    }
+
+    .our-work {
+    height: 100%;
+    background-color: #f2f2f2;
+    margin-bottom: 40px;
+    }
+
+    .ul-links li {
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    }
+
+    .ul-links li.active {
+    background-color: var(--main-color-);
+    }
+
+    .ul-links li:not(.active):hover {
+    color: var(--main-color-);
+    }
+
+    .our-work .row {
+    margin-left: 0;
+    }
+
+    .our-work .row .box-img {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .our-work .row .box-img::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00b7d382;
+    transform: translateX(100%);
+    transition: 0.4s ease;
+    }
+
+    .our-work .row .box-img:hover::before {
+    transform: translateX(0);
+    }
+
+    .our-work .btn {
+    width: fit-content;
+    margin: 30px auto 50px;
+    background-color: #00b7d3;
+    }
+
+    .about-us .row > .img {
+    padding: 0;
+    }
+
+    .row {
+    margin-left: 0;
+    }
+
+    .team .row h4 {
+    background-color: #00b7d3;
+    padding: 5px;
+    }
+
+    .team .row .imgs {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .team .row .imgs::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00b7d3a4;
+    transform: translateY(100%);
+    transition: 0.4s ease-in-out;
+    }
+
+    .team .row .imgs:hover::before {
+    transform: translate(0);
+    }
+
+    .project .info {
+    background-color: #0e121a;
+    color: white;
+    }
+
+    .subs {
+    height: 100%;
+    background-color: #0e121a;
+    color: white;
+    }
+
+    .subs input {
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #00b7d3;
+    color: white;
+    }
+
+    .subs input::placeholder {
+    color: white;
+    }
+
+    .btn:hover {
+    background-color: #087889;
+    color: white;
+    }
+
+    .footer {
+    background-color: #10244e;
+    color: white;
+    }
+
+    .footer .capy > span {
+    color: var(--main-color-);
+    }
+
+    .info span {
+    color: #00b7d3;
+    }
+
+    .footer .btn {
+    color: #cdcdcd;
+    }
+
+    .footer .icon ul svg {
+    margin-left: 40px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    }
+
+    .footer .icon .facebook {
+    background-color: #1877f2;
+    }
+
+    .footer .icon .linkedin {
+    background-color: #0a66c2;
+    }
+
+    .footer .icon .github {
+    background-color: #4078c0;
+    }
+
+    .footer .icon .twitter {
+    background-color: #1da1f2;
+    }
+    .row{
+        margin-right: 0;
+    }
